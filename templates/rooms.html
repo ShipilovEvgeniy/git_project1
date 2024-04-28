@@ -1,0 +1,16 @@
+{% extends "shablon.html" %}
+
+{% block title %}
+Главная
+{% endblock %}
+{% block body %}
+
+<h4>            Размещение по каютам</h4>
+
+<dir>
+{% for member in users %}
+    {{ member }} - Каюта номер {{ loop.index }} {% if loop.first %} - капитан {% endif %} <br> <br>
+{% endfor %}
+</dir>
+
+{% endblock %}

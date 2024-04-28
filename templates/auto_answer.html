@@ -1,0 +1,15 @@
+{% extends "shablon.html" %}
+
+{% block title %}
+Главная
+{% endblock %}
+{% block body %}
+
+    Фамилия: {{answer_dict.surname}}<br>
+    Имя: {{answer_dict.Watnyname}}<br>
+    Образование: {{answer_dict.education}}<br>
+    Профессия: {{answer_dict.profession}}<br>
+    Пол: {{answer_dict.sex}}<br>
+    Мотивация: {{answer_dict.motivation}}<br>
+    Готовы остаться на марсе? {{answer_dict.ready}}<br>
+{% endblock %}
